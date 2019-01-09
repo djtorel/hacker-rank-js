@@ -1,7 +1,7 @@
 function diagonalDifference(arr) {
     let diagSum1 = 0;
     let diagSum2 = 0;
-    arr.map((value, index) => {
+    arr.forEach((value, index) => {
         diagSum1 += value[index];
         diagSum2 += value[(arr.length - 1) - index];
     });
